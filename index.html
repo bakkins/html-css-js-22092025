@@ -10,7 +10,7 @@
 
 <body>
     <div id="formDiv">
-        <form action="">
+        <form action="submit.php" method="POST">
             <label for="fName">name:</label><br>
             <input type="text" id="fName" name="fName"><br>
 
@@ -18,10 +18,10 @@
             <input type="text" id="fEmail" name="fEmail"><br>
 
             <label for="fLevel">Level:</label>
-            <select name="levels" id="levels">
-                <option value="begginer">Begginer</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="expert">Expert</option>
+            <select name="fLevel" id="fLevel">
+                <option value='low'>Begginer</option>
+                <option value='medium'>Intermediate</option>
+                <option value='high'>Expert</option>
             </select><br>
 
             <label for="fFeedback">Feedback:</label><br>
