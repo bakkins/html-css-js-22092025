@@ -18,7 +18,8 @@ if ($conn->connect_error) {
 
 // Create database
 $sql = "INSERT INTO feedbacks (name, email, level, content)
-VALUES ('$formName', '$formEmail',$formLevel, '$formFeedback')";
+VALUES ('$formName', '$formEmail','$formLevel', '$formFeedback')";
+
 if ($conn->query($sql) === TRUE) {
   echo "<h1>Content inserted successfully</h1>";
 } else {
